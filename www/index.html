@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>هدهد</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.css" />
+        <link rel="stylesheet" href="vendor/jquery/jquery.mobile.min.rtl.css" />
+        <link rel="stylesheet" href="vendor/waves/waves.min.css" />
+        <link rel="stylesheet" href="vendor/wow/animate.css" />
+        <link rel="stylesheet" href="css/nativedroid2.css" />
+        <link rel="stylesheet" href="css/ND2rtl.css" />
+
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <style>/*my all css*/
+
+            #leftpanel {
+                opacity: 0.9;
+                color: #fff;
+                background: linear-gradient(rgba(116, 130, 227, 0.5),rgba(187, 152, 94, 0.6)), url(img/menuWallpaper.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .ui-li-divider {
+                color: #eee !important;
+                background-color: rgba(57, 73, 163, 0.82) !important;
+            }
+
+            .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head+body .ui-btn.ui-btn-a:hover {
+                background-color: #ededed;
+                border-color: #ddd;
+                color: #333 !important;
+                text-shadow: 0 1px 0 #f3f3f3;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(63, 81, 181, 0.25);
+                z-index: 2;
+                cursor: pointer;
+                color: #fff;
+                text-shadow: 2px 3px 2px #2196F3;
+            }
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -25px;
+                margin-left: -50px;
+            }
+            .ui-btn.ui-input-clear {
+                background-color: rgba(255, 24, 24, 0.79);
+            }
+
+        .ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+            background-color: #bb985e;
+            color: rgba(255,255,255,0.85);
+        }
+        </style>
+
+
+        <script>
+
+            function playfrom0(id) { 
+                var vid = document.getElementById(id);
+                //                if (vid.currentTime == 55){
+                //                    vid.currentTime=0;
+                //                }
+                if (vid.paused) {
+                    vid.play(); 
+                    off();
+                } else {
+                    vid.pause();
+                    on();
+                }
+
+
+
+            }
+
+            function on() {
+                document.getElementById("overVid").style.opacity = "1";
+            }
+
+            function off() {
+                document.getElementById("overVid").style.opacity = "0";
+            }
+            function toggleButton(ref,bttnID){
+                document.getElementById(bttnID).disabled= ((ref.value !== ref.defaultValue) ? false : true);
+            }
+
+                        
+        </script>
+        <script>
+            var Dlink = "http://rebrand.ly/HRSIHODHODI";
+            var sharemsgD = "كن سببا في دعوة جيل كامل للإسلام في شتى بقاع الأرض يشفع لك عند اللهﷻ \nالآن \n#هدهد_في_كأس_العالم \n \nللتبرع عبر الرابط التالي : \n"+ Dlink +" \n#OnlyOneGod \n@hudhudinfo \n‏🔁 ساهم وتبرع بالنشر";
+        
+            
+            var Vlink = "https://goo.gl/Wj6mQb";
+            var sharemsgV = "*كن سببا في دعوة جيل كامل للإسلام في شتى بقاع الأرض يشفع لك عند اللهﷻ* في (مشروع هدهد) \n ---\n \n الدعم المادي على الرغم من أهميته ليس هو الشيء الوحيد الذي يمكن أن تقدمه في دعم مشروع هدهد للتعريف بالاسلام، هناك الكثير من الأمور التي يمكن المساهمة بها ، يسعدنا انضمامكم وتطوعكم معنا في أسرة هدهد، الرجاء تعبئة هذا النموذج وسيتم مراسلتك في أقرب وقت ممكن. \n رابط التطوع: \n" + Vlink;
+         </script>
+    </head>
+    <body dir="rtl" >
+        <div class="overlay" id="dntLod" style="display: none;z-index: 9999;background-color: rgba(33, 150, 243, 0.77);">
+            <div class="center" >
+                <img src="https://alnajat-afpza4r.netdna-ssl.com/donation/wp-content/uploads/heart22.svg" alt="load" >
+            </div>
+        </div>
+        <div data-role="page" class="nd2-no-menu-swipe" id="home">
+
+            <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+            <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+                <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+            </div>
+
+            <div data-role="header" data-position="fixed" class="wow fadeIn" data-wow-delay="0.2s">
+                <!-- <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
+                
+             <!--<a href="#" onclick="location.reload();" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-refresh"></i></a>-->
+                <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+                <h1 class="wow fadeIn" data-wow-delay='0.4s'>الرئيسية</h1>
+
+                <ul data-role="nd2tabs" data-swipe="true" dir="ltr" style="text-align: right">
+                    <!--                    <li data-tab="colors">ساهم معنا</li>-->
+                    <li data-tab="volunteer">تطوع معنا</li>
+                    <li data-tab="donate">تبرع الآن</li>
+                    <li data-tab="home" data-tab-active="true">مشروع هدهد</li>
+                </ul>
+
+
+            </div>
+
+            <div role="main" class="ui-content" data-inset="false">
+                <div id="debugDiv"></div>
+
+                <div data-role="nd2tab" data-tab="home">                  
+                    <div class="nd2-card" >
+
+                        <div class="card-title has-avatar">
+                            <img class="card-avatar" src="img/logo.jpg">
+                            <h3 class="card-primary-title">هدهد</h3>
+                        </div>
+
+                        <div class="card-media" >
+                            <div id="overVid" class="overlay" onclick="playfrom0('min1');">
+                                <div class="center" style="margin-left: -12px;margin-top: -30px;">
+                                    <i class="zmdi zmdi-play zmdi-hc-4x"></i>
+                                </div>
+                            </div>
+                            <!--                            <button onclick="playfrom0('min1');">play </button>-->
+                            <video id="min1" width="100%" poster="img/2logo.jpg"  >
+                                <source src="vid/1min.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="nd2-card" style="margin: 9px;">
+                            <div class="card-supporting-text has-action">
+                                <span >عدد المهتدين</span>
+                                <span class="align-left" style="float: left">177</span>
+                            </div>
+                        </div> 
+                        <div class="nd2-card" style="text-align: center">
+
+                            <a class="ui-btn ui-btn-raised clr-primary" href="http://rebrand.ly/HRSIHODHODI"  data-transition="pop">
+                                <div class="card-title">
+                                    <h3 class="">تبــــــــ(الآن)ــــــــرع</h3>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="card-supporting-text has-action">
+                            <p>                        مليارات حول العالم حيث لا إعلام معاصر يوصل لهم معنى الإسلام، وأصبح من الصعوبة بمكان إيصال دين الرحمة لكل فرد منهم عبر السفر والطرق التقليدية.</p>
+                            <p><br></p>
+                            <p> يسعى <strong><a href="https://twitter.com/search?q=%23%D9%85%D8%B4%D8%B1%D9%88%D8%B9_%D9%87%D8%AF%D9%87%D8%AF">#مشروع_هدهد</a></strong> لتقديم الإسلام لهم بأجمل صورة عبر إعلام احترافي عالمي بلغات مختلفة؛ليغيروا مفهومهم الخاطئ عن دين السلام ومن ثم يدخلوا في دين الله أفواجا، ويقدّم لهم بعد ذلك مدرسة الكترونية ليتعلموا مبادئ دينهم..</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div data-role="nd2tab" data-tab="donate">
+                    <div class="nd2-card" style="text-align: center">
+
+                        <a class="ui-btn ui-btn-raised clr-primary" href="http://rebrand.ly/HRSIHODHODI"  data-transition="pop">
+                            <div class="card-title">
+                                <h3 class="">تبــــــــ(الآن)ــــــــرع</h3>
+                            </div>
+                        </a>
+
+
+                    </div>
+                    <div class="nd2-card">
+
+                        <div class="card-supporting-text has-action">
+                            <h2>تبرع الآن</h2>
+                            <h4>لنشر الإسلام عالميا</h4>
+<!-- 
+                            <p>
+                                <label for="priceindex">اضف مبلغ التبرع:</label>
+                                <input onkeyup="toggleButton(this,'supDI');" type="number" min="1" name="pricD" id="priceindex" value="" data-clear-btn="true" placeholder="مبلغ التبرع">
+                            </p>
+-->
+                        </div>
+                        <div class="card-action">
+                            <div class="row between-xs">
+                                <div class="col-xs-4">
+                                    <div class="box">
+                                        <a href="#" onclick="shareMsg(sharemsgD)" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-share'></i></a>
+                                        <a href="http://rebrand.ly/HRSIHODHODI" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-link'></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 align-left">
+                                    <div class="box">
+<!--                                        <button disabled id="supDI" onclick="donate('#priceindex')" class="ui-btn ui-btn-raised  ui-btn-inline">تبرُع</button>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div data-role="nd2tab" data-tab="volunteer"> 
+				<!-- Simple Card !-->
+
+				<div class="nd2-card">
+
+					<div class="card-media">
+						<img src="img/volunteer.jpg">
+					</div>
+
+					<div class="card-supporting-text">
+						الدعم المادي على الرغم من أهميته ليس هو الشيء الوحيد الذي يمكن أن تقدمه في دعم مشروع هدهد للتعريف بالاسلام، هناك الكثير من الأمور التي يمكن المساهمة بها ، يسعدنا انضمامكم وتطوعكم معنا في أسرة هدهد، الآن يمكنك تسجيل بياناتك وسيتم مراسلتك في أقرب وقت ممكن . 
+					</div>
+                        <div class="card-action">
+                            <div class="row between-xs">
+                                <div class="col-xs-4">
+                                    <div class="box">
+                                        <a href="#" onclick="shareMsg(sharemsgV)" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-share'></i></a>
+                                        <a href="https://goo.gl/Wj6mQb" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-link'></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 align-left">
+                                    <div class="box">
+                                        <a href="#volunteer" data-rel="dialog" data-transition="pop" class="ui-btn ui-btn-raised  ui-btn-inline">تطوُع</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+				</div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Start of second page: #2 -->
+        <div data-role="page" id="volunteer" >
+
+            <div data-role="header">
+                <h1>تطوع</h1>
+            </div><!-- /header -->
+
+            <div data-role="content" style="margin: 0;padding: 0;">	
+                        <iframe src="https://goo.gl/fDUcFa"  width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل...</iframe>
+            </div><!-- /content -->
+
+
+        </div><!-- /page 3 -->
+        <script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+        <script src="cordova.js"></script>
+        <script src="vendor/jquery/jquery-ui.min.js"></script>
+        <script src="vendor/jquery/jquery.mobile.min.js"></script>
+        <script src="vendor/waves/waves.min.js"></script>
+        <script src="js/nativedroid2.js"></script>
+        <script src="js/script.js"></script>
+        <script src="nd2settings.js"></script>
+
+    </body>
+</html>
+
