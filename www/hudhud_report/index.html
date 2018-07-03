@@ -222,10 +222,19 @@ Remove this if you use the .htaccess -->
             })
 
         });
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        function onDeviceReady() {
+            screen.orientation.lock('landscape').then(function(obj) {
+                console.log(obj);
+            }, function(obj) {
+                console.log(obj);
+            });
+        }
     </script>
 
         
-        <script src="/cordova.js"></script>
+    <script src="../cordova.js"></script>
     <!-- scripts concatenated and minified via ant build script-->
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
