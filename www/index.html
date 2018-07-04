@@ -109,11 +109,6 @@
          </script>
     </head>
     <body dir="rtl" >
-        <div class="overlay" id="dntLod" style="display: none;z-index: 9999;background-color: rgba(33, 150, 243, 0.77);">
-            <div class="center" >
-                <img src="https://alnajat-afpza4r.netdna-ssl.com/donation/wp-content/uploads/heart22.svg" alt="load" >
-            </div>
-        </div>
         <div data-role="page" class="nd2-no-menu-swipe" id="home">
 
             <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
@@ -124,8 +119,8 @@
 
             <div data-role="header" data-position="fixed" class="wow fadeIn" data-wow-delay="0.2s">
                 <!-- <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
-                
              <!--<a href="#" onclick="location.reload();" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-refresh"></i></a>-->
+                <a href="pages/callus.html" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-phone"></i></a>
                 <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
                 <h1 class="wow fadeIn" data-wow-delay='0.4s'>الرئيسية</h1>
 
@@ -135,16 +130,11 @@
                     <li data-tab="donate">تبرع الآن</li>
                     <li data-tab="home" data-tab-active="true">مشروع هدهد</li>
                 </ul>
-
-
             </div>
 
             <div role="main" class="ui-content" data-inset="false">
-                <div id="debugDiv"></div>
-
                 <div data-role="nd2tab" data-tab="home">                  
                     <div class="nd2-card" >
-
                         <div class="card-title has-avatar">
                             <img class="card-avatar" src="img/logo.jpg">
                             <h3 class="card-primary-title">هدهد</h3>
@@ -156,7 +146,6 @@
                                     <i class="zmdi zmdi-play zmdi-hc-4x"></i>
                                 </div>
                             </div>
-                            <!--                            <button onclick="playfrom0('min1');">play </button>-->
                             <video id="min1" width="100%" poster="img/2logo.jpg"  >
                                 <source src="vid/1min.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
